@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+</head>
+<body>
+    <h1>Consulta de Velocidade</h1>
+    Velocidade do carro: <input type="number" name="veloc" id="veloc" placeholder="Sua velocidade aqui" >
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resp">
+
+    </div>
+    <script>
+        function verificar() {
+            var velo = document.getElementById('veloc')
+            var res = document.getElementById('resp')
+            var vel = Number(velo.value)
+            res.innerHTML = `<p>A velocidade do seu carro é de ${vel} Km/h.</p>`
+            if (vel >60) {
+                res.innerHTML += `Voce foi multado por excesso de <strong>velocidade</strong>!`
+            }
+            res.innerHTML += `<p>Diriga com responsabilidade!</p>`
+        }
+    </script>
+</body>
+</html>
