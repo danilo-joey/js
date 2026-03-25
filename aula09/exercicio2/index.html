@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="ano">Ano de nascimento:</label>
+                <input type="number" name="ano" id="ano">
+            </p>
+            <br>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked> 
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem"> 
+                <label for="fem">Feminino</label>
+            </p> 
+            <br>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            div2
+        </div>
+       
+    </section>
+     <footer>
+            <p> &copy;Danilo Silva</p>
+        </footer>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
